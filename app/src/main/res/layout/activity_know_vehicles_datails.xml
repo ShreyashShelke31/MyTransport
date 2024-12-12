@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+  <!-- Company Logo ImageView -->
+  <ImageView
+      android:id="@+id/imageViewLogo"
+      android:layout_width="58dp"
+      android:layout_height="48dp"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="24dp"
+      android:layout_marginLeft="50dp"
+      android:layout_marginBottom="16dp"
+      android:src="@drawable/logo3"/>
+
+  <!-- Company Name TextView at the top -->
+  <TextView
+      android:id="@+id/textViewCompanyName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="MY TRansport"
+      android:textSize="24sp"
+      android:textColor="@color/colorPrimary"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="24dp"
+      android:layout_marginBottom="16dp"/>
+
+  <!-- Form Heading below the company name -->
+  <TextView
+      android:id="@+id/textViewFormHeading"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Wel-Come Admin....!"
+      android:textSize="20sp"
+      android:textColor="@color/colorPrimaryDark"
+      android:layout_below="@id/textViewCompanyName"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="24dp"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/light_gray"
+      android:padding="50dp"
+      android:layout_centerInParent="true"
+      android:orientation="vertical">
+
+  <TextView
+      android:id="@+id/tripIdTextView"
+      android:layout_marginBottom="10dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Trip ID: "
+      android:textSize="23sp" />
+    <Button
+        android:id="@+id/formTitle"
+        style="@style/OptionButtonStyle"
+        android:text="TRIP Details" />
+
+  <TextView
+      android:id="@+id/originTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="5dp"
+      android:text="Origin: "
+      android:textSize="21sp" />
+
+  <TextView
+      android:id="@+id/destinationTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="5dp"
+      android:text="Destination: "
+      android:textSize="21sp" />
+
+  <TextView
+      android:id="@+id/dateTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="5dp"
+      android:text="Date: "
+      android:textSize="20sp" />
+    <TextView
+        android:id="@+id/TotalRentTextView"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/PaidRentTextView"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/PaidAdvanceTextView"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/PayableAdvanceTextView"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ExtraAdvanceTextView"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/remainingRentTextView"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/extraAdvTextView"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_height="wrap_content" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="40dp"
+      android:layout_marginTop="-30dp"
+      android:orientation="horizontal">
+
+  <Button
+      android:id="@+id/editButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Edit" />
+
+  <Button
+      android:id="@+id/deleteButton"
+      android:layout_marginLeft="50dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Delete" />
+</LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

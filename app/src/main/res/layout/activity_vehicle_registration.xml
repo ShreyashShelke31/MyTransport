@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!-- Company Logo ImageView -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo3"/>
+    <!-- Company Name TextView at the top -->
+    <TextView
+        android:id="@+id/textViewCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MYTRansport"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Form Heading below the company name -->
+    <TextView
+        android:id="@+id/textViewFormHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Your vehicles"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/textViewCompanyName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+       <EditText
+        android:id="@+id/ownerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            style="@style/CustomEditText"
+        android:hint="Owner Name"/>
+
+       <EditText
+        android:id="@+id/vehicleNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+           style="@style/CustomEditText"
+           android:inputType="text"
+        android:hint="Enter vehicle Number"/>
+
+         <EditText
+              android:id="@+id/vehicleModel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              style="@style/CustomEditText"
+              android:hint="Vehicle Model"/>
+
+<!--     <EditText-->
+<!--        android:id="@+id/DriverLicense"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@style/CustomEditText"-->
+<!--        android:hint="Enter Driving license Number"-->
+<!--        android:inputType="number"/>-->
+
+    <EditText
+        android:id="@+id/DriverName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomEditText"
+        android:hint="Enter Driver Name"/>
+
+    <Button
+        android:id="@+id/RegisterVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"/>
+        
+ </LinearLayout>
+</RelativeLayout>

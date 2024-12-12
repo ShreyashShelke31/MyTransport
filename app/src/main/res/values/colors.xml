@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color> <!-- Blue color -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Darker blue color -->
+    <color name="colorAccent">#FF4081</color> <!-- Pink color -->
+    <color name="lightGray">#D3D3D3</color> <!-- Light gray color -->
+    <color name="backgroundColor">#F0F0F0</color> <!-- Light gray background color -->
+    <color name="footer_background">#FFFFFF</color> <!-- Change to your desired background color -->
+
+        <!-- Soft Pastels -->
+        <color name="light_blue">#ADD8E6</color>
+        <color name="pale_pink">#FFB6C1</color>
+        <color name="mint_green">#98FF98</color>
+        <color name="lavender">#E6E6FA</color>
+
+        <!-- Muted Tones -->
+        <color name="light_gray">#D3D3D3</color>
+        <color name="beige">#F5F5DC</color>
+        <color name="soft_peach">#FFDAB9</color>
+
+        <!-- Rich Colors -->
+        <color name="deep_teal">#008080</color>
+        <color name="dark_slate_blue">#483D8B</color>
+        <color name="burgundy">#800020</color>
+
+        <!-- Earthy Shades -->
+        <color name="light_olive_green">#BDB76B</color>
+        <color name="sandy_brown">#F4A460</color>
+        <color name="light_coral">#F08080</color>
+
+        <!-- Vibrant Options -->
+        <color name="coral">#FF7F50</color>
+        <color name="sky_blue">#87CEEB</color>
+        <color name="golden_yellow">#FFD700</color>
+    <color name="soft_white">#F8F9FA</color>
+    <color name="pale_mint">#E0FFFF</color>
+    <color name="soft_lavender">#E6E6FA</color>
+    <color name="light_beige">#F5F5DC</color>
+    </resources>
+
+
+

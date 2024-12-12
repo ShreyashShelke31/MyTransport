@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "936497992021",
+    "project_id": "mytransport2-31ea5",
+    "storage_bucket": "mytransport2-31ea5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936497992021:android:0dce2021b2eab05ec15fdc",
+        "android_client_info": {
+          "package_name": "com.example.mytransport1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYkLb30Z1pqaRvrM96upK_zVaJak8IoS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

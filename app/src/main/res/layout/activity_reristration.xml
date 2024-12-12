@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!-- Company Logo ImageView -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo3"/>
+    <!-- Company Name TextView at the top -->
+    <TextView
+        android:id="@+id/textViewCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MY TRansport"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Form Heading below the company name -->
+    <TextView
+        android:id="@+id/textViewFormHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Here"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/textViewCompanyName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        style="@style/CustomEditText"
+        android:hint="Username"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        style="@style/CustomEditText"
+        android:layout_below="@id/editTextUsername"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        style="@style/CustomEditText"
+        android:layout_below="@id/editTextEmail"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextConfirmPassword"-->
+<!--        style="@style/CustomEditText"-->
+<!--        android:layout_below="@id/editTextPassword"-->
+<!--        android:hint="Confirm Password"-->
+<!--        android:inputType="textPassword"/>-->
+
+    <Button
+        android:id="@+id/buttonRegister"
+        style="@style/CustomButton"
+        android:text="Register"/>
+    </LinearLayout>
+
+</RelativeLayout>

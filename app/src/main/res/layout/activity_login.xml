@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Company Logo ImageView -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo3"/>
+    <!-- Company Name TextView at the top -->
+    <TextView
+        android:id="@+id/textViewCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MYTRansport"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Form Heading below the company name -->
+    <TextView
+        android:id="@+id/textViewFormHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Here"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/textViewCompanyName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:padding="20dp"
+        android:background="@color/lightGray"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewpic"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/img1"/>
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            style="@style/CustomEditText"
+            android:hint="Username"
+            android:background="@color/backgroundColor"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            style="@style/CustomEditText"
+            android:layout_below="@id/editTextEmail"
+            android:background="@color/backgroundColor"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/buttonlogin"
+            style="@style/CustomButton"
+            android:text="Login" />
+
+        <EditText
+            android:id="@+id/textViewError"
+            style="@style/CustomEditText"
+
+            android:inputType="text" />
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:padding="16dp"-->
+<!--        android:background="#FFC0CB">-->
+
+<!--        &lt;!&ndash; Checkmark (Done) &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:src="@drawable/profile"-->
+<!--            app:tint="#FFFFFF" />-->
+
+<!--        &lt;!&ndash; Task Details &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Yoga classes"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        &lt;!&ndash; Reminder Time &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="4:00 PM"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textSize="14sp" />-->
+<!--    </LinearLayout>-->
+
+
+</RelativeLayout>

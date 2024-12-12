@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editOrigin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Origin" />
+
+    <EditText
+        android:id="@+id/editDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destination" />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date" />
+    <EditText
+        android:id="@+id/editPaidRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Received Rent" />
+
+    <EditText
+        android:id="@+id/editTotalRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Rent" />
+
+    <EditText
+        android:id="@+id/editPaidAdvance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Paid Advance" />
+
+    <EditText
+        android:id="@+id/editPayableAdvance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Payable Advance" />
+<!--    <EditText-->
+<!--        android:id="@+id/extraAdvance"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Payable Advance" />-->
+<!--    <EditText-->
+<!--        android:id="@+id/remainingRent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Payable Advance" />-->
+</LinearLayout>

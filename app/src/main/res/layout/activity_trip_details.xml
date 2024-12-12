@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!-- Company Logo ImageView -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo3"/>
+    <!-- Company Name TextView at the top -->
+    <TextView
+        android:id="@+id/textViewCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MY TRansport"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Form Heading below the company name -->
+    <TextView
+        android:id="@+id/textViewFormHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Trip Details Here....!"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/textViewCompanyName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+    <!-- Add ScrollView to enable scrolling when content exceeds the screen size -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFormHeading"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:background="@color/beige"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/PartyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomEditText"
+            android:paddingTop="5dp"
+            android:hint="Enter Party Name"/>
+
+        <EditText
+            android:id="@+id/PartyMob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomEditText"
+            android:paddingTop="5dp"
+            android:hint="Enter Party Mobile no"/>
+        <Spinner
+            android:id="@+id/vehicleNumberSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+           android:autofillHints="---------"/>
+<!--        <Spinner-->
+<!--            android:id="@+id/DriverNameSpinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:autofillHints="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--            />-->
+
+
+        <!--        <EditText-->
+<!--            android:id="@+id/vehicleNo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/CustomEditText"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:hint="Enter vehicle Number" />-->
+
+        <EditText
+            android:id="@+id/Origin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomEditText"
+            android:hint="Enter Starting Place"/>
+
+        <EditText
+            android:id="@+id/Destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomEditText"
+            android:hint="Enter Destination place"/>
+
+        <EditText
+            android:id="@+id/SDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomEditText"
+            android:inputType="date"
+            android:hint="pick a date"/>
+
+        <EditText
+            android:id="@+id/TotalRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomEditText"
+            android:inputType="number"
+            android:hint="Enter Total Rent of a Trip"/>
+
+        <EditText
+            android:id="@+id/PaidRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomEditText"
+            android:inputType="number"
+            android:hint="Total Rent received from Party"/>
+        <EditText
+            android:id="@+id/PayableAdvance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomEditText"
+            android:inputType="number"
+            android:hint="Enter Payable Advance Amount"/>
+        <EditText
+            android:id="@+id/PaidAdvance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomEditText"
+            android:inputType="number"
+            android:hint="Enter Advance you paid"/>
+
+
+
+        <Button
+            android:id="@+id/TripDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Trip Data"/>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
